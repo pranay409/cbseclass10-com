@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Reflection and Refraction for CBSE Class 10: Formulas and Ray Diagrams | CBSEClass10</title>
+    <meta name="description" content="Master light reflection and refraction for CBSE Class 10. Learn formulas, ray diagrams, and exam-important concepts from NCERT with solved examples.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f7ff;
+        }
+        
+        header {
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #5B21B6;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        
+        nav a:hover {
+            color: #7C3AED;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .hero-date {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        
+        .article-body {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(123, 58, 237, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .article-body h2 {
+            color: #5B21B6;
+            font-size: 28px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #E9D5FF;
+        }
+        
+        .article-body h2:first-child {
+            margin-top: 0;
+        }
+        
+        .article-body p {
+            margin-bottom: 16px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        
+        .article-body ul, .article-body ol {
+            margin-left: 25px;
+            margin-bottom: 16px;
+        }
+        
+        .article-body li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+        
+        .highlight-box {
+            background-color: #F5F3FF;
+            border-left: 4px solid #7C3AED;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            color: #3D2669;
+            font-weight: 500;
+        }
+        
+        .highlight-box strong {
+            color: #5B21B6;
+        }
+        
+        .formula-box {
+            background-color: #F3E8FF;
+            border: 1px solid #DDD6FE;
+            padding: 16px;
+            margin: 15px 0;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+            color: #2E1065;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 100%);
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .cta-box h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+        
+        .cta-box p {
+            margin-bottom: 16px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        .cta-link {
+            display: inline-block;
+            background-color: #fff;
+            color: #5B21B6;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 700;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-link:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            background-color: #2E1065;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+        
+        footer p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        footer a {
+            color: #C084FC;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass10.com/cbse10-light-reflection-and-refraction.html">
+<meta property="og:title" content="Light Reflection and Refraction for CBSE Class 10: Formulas and Ray Diagrams">
+<meta property="og:description" content="Master light reflection and refraction for CBSE Class 10. Learn formulas, ray diagrams, and exam-important concepts from NCERT with solved examples.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass10.com/cbse10-light-reflection-and-refraction.html">
+<meta property="og:site_name" content="CBSEClass10">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Light Reflection and Refraction for CBSE Class 10: Formulas and Ray Diagrams">
+<meta name="twitter:description" content="Master light reflection and refraction for CBSE Class 10. Learn formulas, ray diagrams, and exam-important concepts from NCERT with solved examples.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Light Reflection and Refraction for CBSE Class 10: Formulas and Ray Diagrams", "description": "Master light reflection and refraction for CBSE Class 10. Learn formulas, ray diagrams, and exam-important concepts from NCERT with solved examples.", "datePublished": "2026-11-11", "dateModified": "2026-11-11", "author": {"@type": "Organization", "name": "CBSEClass10"}, "publisher": {"@type": "Organization", "name": "CBSEClass10"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass10.com/cbse10-light-reflection-and-refraction.html"}, "articleSection": "Science"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Karan Malhotra</a> &middot; 📅 November 11, 2026</div>
+    <header>
+        <nav>
+            <a href="/">← CBSEClass10.com</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="subject-badge">Science</div>
+            <h1>Light Reflection and Refraction for CBSE Class 10: Formulas and Ray Diagrams</h1>
+            <div class="hero-date">Published on November 11, 2026</div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <article class="article-body">
+            <p>Light Reflection and Refraction is one of the most important chapters in CBSE Class 10 Science, forming a critical part of the board exam syllabus. This chapter (Chapter 10 from NCERT) introduces students to fundamental optical phenomena that govern how light behaves when it encounters different surfaces and media. Whether you're preparing for your board exams or strengthening your fundamentals, mastering the concepts, formulas, and ray diagrams in this chapter is essential for scoring well in the optics unit.</p>
+            
+            <h2>Understanding Light Reflection: Laws and Ray Diagrams</h2>
+            
+            <p>Reflection is the phenomenon where light bounces back from a surface. In CBSE Class 10, you'll study two types of reflection: regular (specular) reflection and diffuse reflection. Regular reflection occurs on smooth, shiny surfaces like mirrors, while diffuse reflection happens on rough surfaces like paper or walls.</p>
+            
+            <p><strong>Laws of Reflection (NCERT Chapter 10):</strong></p>
+            <ol>
+                <li>The incident ray, reflected ray, and normal at the point of incidence all lie in the same plane.</li>
+                <li>The angle of incidence equals the angle of reflection (∠i = ∠r).</li>
+            </ol>
+            
+            <p>For plane mirrors, the ray diagram shows that an incident ray hitting the mirror surface reflects at an equal angle. A crucial point for your board exam: remember to draw the normal perpendicular to the surface, measure angles from the normal (not the surface), and clearly mark the incident, reflected, and refracted rays.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Common Mistake:</strong> Students often measure angles from the mirror surface instead of the normal. Always remember: angles of incidence and reflection are measured from the <strong>normal</strong> (perpendicular to the surface), not from the surface itself.</p>
+            </div>
+            
+            <h2>Spherical Mirrors: Concave and Convex Mirrors</h2>
+            
+            <p>NCERT Chapter 10 covers spherical mirrors in detail. Spherical mirrors are parts of a sphere's surface, and they come in two types: concave mirrors (converging) and convex mirrors (diverging).</p>
+            
+            <p><strong>Key Terms for Mirror Formulas:</strong></p>
+            <ul>
+                <li><strong>Pole (P):</strong> The center of the mirror's surface</li>
+                <li><strong>Center of Curvature (C):</strong> The center of the sphere of which the mirror is a part</li>
+                <li><strong>Radius of Curvature (R):</strong> Distance from pole to center of curvature</li>
+                <li><strong>Focal Length (f):</strong> Distance from pole to focus, where f = R/2</li>
+            </ul>
+            
+            <p><strong>Mirror Formula (for both concave and convex mirrors):</strong></p>
+            <div class="formula-box">
+                1/f = 1/u + 1/v
+            </div>
+            
+            <p>Where:</p>
+            <ul>
+                <li><strong>f</strong> = focal length</li>
+                <li><strong>u</strong> = object distance (always positive)</li>
+                <li><strong>v</strong> = image distance (positive for real images, negative for virtual)</li>
+            </ul>
+            
+            <p><strong>Magnification Formula:</strong></p>
+            <div class="formula-box">
+                m = -v/u = h'/h
+            </div>
+            
+            <p>Where h' is image height and h is object height. For board exams, remember that real images formed by concave mirrors are inverted (negative magnification), while virtual images are erect (positive magnification).</p>
+            
+            <h2>Light Refraction: Snell's Law and Critical Angle</h2>
+            
+            <p>Refraction is the bending of light when it travels from one medium to another. NCERT Chapter 10 introduces Snell's Law, which is fundamental to understanding refraction.</p>
+            
+            <p><strong>Snell's Law (Law of Refraction):</strong></p>
+            <div class="formula-box">
+                n₁ sin θ₁ = n₂ sin θ₂
+            </div>
+            
+            <p>Where:</p>
+            <ul>
+                <li><strong>n₁, n₂</strong> = refractive indices of the two media</li>
+                <li><strong>θ₁</strong> = angle of incidence</li>
+                <li><strong>θ₂</strong> = angle of refraction</li>
+            </ul>
+            
+            <p><strong>Refractive Index (n):</strong></p>
+            <div class="formula-box">
+                n = c/v
+            </div>
+            
+            <p>Where c is the speed of light in vacuum (3×10⁸ m/s) and v is the speed of light in the medium. Common refractive indices you should memorize for your board exam: air (1.0), water (1.33), and glass (1.5).</p>
+            
+            <p>When light travels from a denser to a rarer medium (higher n to lower n), the ray bends away from the normal. Conversely, when traveling from a rarer to a denser medium, it bends toward the normal. A critical concept for CBSE exams: the <strong>critical angle</strong> occurs when the refracted ray travels along the boundary (θ₂ = 90°).</p>
+            
+            <div class="formula-box">
+                sin θc = n₂/n₁
+            </div>
+            
+            <p>Beyond the critical angle, total internal reflection occurs. This phenomenon is the principle behind optical fibers and is frequently asked in board exams.</p>
+            
+            <h2>Lenses and Lens Formula: Convex and Concave</h2>
+            
+            <p>NCERT Chapter 10 also covers thin lenses. Lenses are optical devices that use refraction to converge or diverge light. Convex lenses (converging) are thicker at the center, while concave lenses (diverging) are thicker at the edges.</p>
+            
+            <p><strong>Lens Formula (same for both convex and concave):</strong></p>
+            <div class="formula-box">
+                1/f = 1/u + 1/v
+            </div>
+            
+            <p>This is identical to the mirror formula, but sign conventions differ slightly for lenses. For the CBSE Class 10 exam, remember the Cartesian sign convention: distances measured in the direction of light propagation are positive, opposite to it are negative. Focal length is positive for convex lenses and negative for concave lenses.</p>
+            
+            <p><strong>Magnification for Lenses:</strong></p>
+            <div class="formula-box">
+                m = v/u
+            </div>
+            
+            <p>Note: Unlike mirrors, lens magnification formula does not include the negative sign in this basic form. A convex lens can form both real and virtual images depending on object position, making it essential to practice multiple ray diagrams for your board exam.</p>
+            
+            <p>For ray diagrams with lenses, remember three standard rays: one parallel to the principal axis (passes through the focal point after refraction), one through the optical center (passes undeviated), and one through the focal point (emerges parallel). These ray diagrams are frequently drawn in CBSE board exams, so practice them thoroughly.</p>
+            
+            <div class="highlight-box">
+                <p><strong>Exam Tip:</strong> Ray diagrams are worth significant marks in CBSE board exams. Always use a ruler, clearly label the object, image, focal points, and optical center. Remember to draw at least two rays to locate the image, and practice different object positions for both concave and convex mirrors/lenses.</p>
+            </div>
+            
+            <div class="cta-box">
+                <h3>Master Optics with Expert Guidance</h3>
+                <p>Light Reflection and Refraction requires clear conceptual understanding and consistent practice. Join <strong>Padhle Yoddha</strong>, the recommended affordable coaching for CBSE Class 9
