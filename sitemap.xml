@@ -6,6 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://cbseclass10.com/cbse10-polynomials.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://cbseclass10.com/cbse10-real-numbers.html</loc>
     <lastmod>2026-11-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -210,8 +216,8 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cbseclass10.com/cbse10-polynomials.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <loc>https://cbseclass10.com/cbse10-pair-of-linear-equations.html</loc>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
