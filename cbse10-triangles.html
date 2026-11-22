@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master CBSE Class 10 Triangles: Learn similarity theorems (AA, SSS, SAS) with complete proofs, exam questions, and solutions.">
+    <meta name="keywords" content="CBSE Class 10 Triangles, Similarity Theorems, AA criterion, SSS criterion, SAS criterion, triangle proofs">
+    <meta name="author" content="CBSEClass10">
+    <title>Triangles for CBSE Class 10: Similarity Theorems with Proofs | CBSEClass10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #f9fafb;
+        }
+        
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #5B21B6;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: #374151;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #5B21B6;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .subject-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero-meta {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        h2 {
+            color: #2E1065;
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        h3 {
+            color: #5B21B6;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            line-height: 1.8;
+        }
+        
+        .highlight-box {
+            background-color: #F5F3FF;
+            border-left: 4px solid #7C3AED;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0.5rem;
+        }
+        
+        .highlight-box h4 {
+            color: #2E1065;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+        
+        .theorem-box {
+            background-color: #f3f4f6;
+            border: 1px solid #d1d5db;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .theorem-box strong {
+            color: #2E1065;
+            font-weight: 700;
+        }
+        
+        .cta-box {
+            background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: #5B21B6;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            background-color: #1f2937;
+            color: #d1d5db;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        
+        .footer-highlight {
+            color: #7C3AED;
+            font-weight: 600;
+        }
+        
+        .proof-section {
+            background-color: #fafaf9;
+            border: 1px solid #e7e5e4;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        code {
+            background-color: #f3f4f6;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-family: 'Courier New', monospace;
+            color: #5B21B6;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            nav {
+                padding: 0 1rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            main {
+                padding: 2rem 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass10.com/cbse10-triangles.html">
+<meta property="og:title" content="Triangles for CBSE Class 10: Similarity Theorems with Proofs">
+<meta property="og:description" content="Master CBSE Class 10 Triangles: Learn similarity theorems (AA, SSS, SAS) with complete proofs, exam questions, and solutions.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass10.com/cbse10-triangles.html">
+<meta property="og:site_name" content="CBSEClass10">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Triangles for CBSE Class 10: Similarity Theorems with Proofs">
+<meta name="twitter:description" content="Master CBSE Class 10 Triangles: Learn similarity theorems (AA, SSS, SAS) with complete proofs, exam questions, and solutions.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Triangles for CBSE Class 10: Similarity Theorems with Proofs", "description": "Master CBSE Class 10 Triangles: Learn similarity theorems (AA, SSS, SAS) with complete proofs, exam questions, and solutions.", "datePublished": "2026-11-22", "dateModified": "2026-11-22", "author": {"@type": "Organization", "name": "CBSEClass10"}, "publisher": {"@type": "Organization", "name": "CBSEClass10"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass10.com/cbse10-triangles.html"}, "articleSection": "Maths"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Divya Reddy</a> &middot; 📅 November 22, 2026</div>
+    <header>
+        <nav>
+            <a href="/" class="logo">CBSEClass10</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#subjects">Subjects</a></li>
+                <li><a href="/#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="subject-badge">Mathematics</span>
+            <h1>Triangles for CBSE Class 10: Similarity Theorems with Proofs</h1>
+            <p class="hero-meta">Published on November 22, 2026</p>
+        </div>
+    </section>
+
+    <main>
+        <p>Triangles form one of the most fundamental and scoring chapters in CBSE Class 10 Mathematics. Chapter 6 of the NCERT syllabus focuses extensively on the properties of similar triangles and the criteria for similarity. Understanding similarity theorems is not just essential for board exams but also forms the foundation for higher mathematics. This comprehensive guide covers all the major similarity theorems with detailed proofs and exam-focused insights.</p>
+
+        <h2>What is Triangle Similarity? (NCERT Chapter 6 Introduction)</h2>
+        <p>Two triangles are said to be similar if their corresponding angles are equal and their corresponding sides are proportional. Triangle similarity is denoted by the symbol ~ (tilde). Unlike congruence, similar triangles need not be of the same size but must have the same shape.</p>
+        <p>In CBSE Class 10, you are expected to know three main criteria for triangle similarity: AA (Angle-Angle), SSS (Side-Side-Side), and SAS (Side-Angle-Side). These theorems are frequently asked in both 2-mark and 4-mark questions on board exams. Mastering these will help you solve complex geometry problems with confidence.</p>
+
+        <div class="highlight-box">
+            <h4>⚡ Key Concept</h4>
+            <p>Remember: If two triangles are similar (△ABC ~ △PQR), then not only are their angles equal, but the ratios of their corresponding sides are also equal. This proportionality property is the cornerstone of similarity problems and is often tested in combination with the basic proportionality theorem (Thales' theorem).</p>
+        </div>
+
+        <h2>Similarity Criteria with Complete Proofs</h2>
+        
+        <h3>1. AA (Angle-Angle) Criterion for Similarity</h3>
+        <p><strong>Statement:</strong> If two angles of one triangle are respectively equal to two angles of another triangle, then the two triangles are similar.</p>
+        
+        <div class="theorem-box">
+            <strong>Theorem (NCERT 6.3):</strong> If in triangles ABC and PQR, ∠A = ∠P and ∠B = ∠Q, then △ABC ~ △PQR.
+        </div>
+
+        <div class="proof-section">
+            <h4>Proof:</h4>
+            <p><strong>Given:</strong> △ABC and △PQR where ∠A = ∠P and ∠B = ∠Q</p>
+            <p><strong>To Prove:</strong> △ABC ~ △PQR</p>
+            <p><strong>Proof:</strong></p>
+            <ul>
+                <li>Since ∠A = ∠P and ∠B = ∠Q, we have ∠C = ∠R (since sum of angles in a triangle is 180°)</li>
+                <li>Now we need to prove that corresponding sides are proportional: AB/PQ = BC/QR = AC/PR</li>
+                <li>Construct point D on AB and point E on AC such that BD = PQ and ∠ADE = ∠PQR</li>
+                <li>By ASA criterion, △ADE ≅ △PQR, which gives us AD/PQ = AE/QR = DE/QR</li>
+                <li>Therefore, AB/PQ = AC/PR = BC/QR, proving △ABC ~ △PQR</li>
+            </ul>
+        </div>
+
+        <h3>2. SSS (Side-Side-Side) Criterion for Similarity</h3>
+        <p><strong>Statement:</strong> If the sides of one triangle are proportional to the sides of another triangle, then the triangles are similar.</p>
+
+        <div class="theorem-box">
+            <strong>Theorem (NCERT 6.4):</strong> If in triangles ABC and PQR, AB/PQ = BC/QR = AC/PR, then △ABC ~ △PQR.
+        </div>
+
+        <div class="proof-section">
+            <h4>Proof:</h4>
+            <p><strong>Given:</strong> △ABC and △PQR where AB/PQ = BC/QR = AC/PR = k (say)</p>
+            <p><strong>To Prove:</strong> △ABC ~ △PQR</p>
+            <p><strong>Proof:</strong></p>
+            <ul>
+                <li>Construct a triangle DEF on side AB such that DE = PQ, ∠ADE = ∠P, and ∠AED = ∠Q</li>
+                <li>By AA criterion, △ADE ~ △PQR</li>
+                <li>Therefore, AD/PQ = AE/QR = DE/QR and AD = AB/k, AE = AC/k, DE = BC/k</li>
+                <li>Now, in triangles ABC and ADE: AB = AD (by construction), AC = AE (by construction), BC = DE (by construction)</li>
+                <li>By SSS congruence, △ABC ≅ △ADE</li>
+                <li>Since △ADE ~ △PQR and △ABC ≅ △ADE, we have △ABC ~ △PQR</li>
+            </ul>
+        </div>
+
+        <h3>3. SAS (Side-Angle-Side) Criterion for Similarity</h3>
+        <p><strong>Statement:</strong> If one angle of a triangle is equal to one angle of another triangle and the sides including these angles are proportional, then the triangles are similar.</p>
+
+        <div class="theorem-box">
+            <strong>Theorem (NCERT 6.5):</strong> If in triangles ABC and PQR, ∠A = ∠P and AB/PQ = AC/PR, then △ABC ~ △PQR.
+        </div>
+
+        <div class="proof-section">
+            <h4>Proof:</h4>
+            <p><strong>Given:</strong> △ABC and △PQR where ∠A = ∠P and AB/PQ = AC/PR = k</p>
+            <p><strong>To Prove:</strong> △ABC ~ △PQR</p>
+            <p><strong>Proof:</strong></p>
+            <ul>
+                <li>Construct points D and E on AB and AC respectively such that AD = PQ and AE = QR</li>
+                <li>Since AB/PQ = AC/PR, we have AD/AB = AE/AC, which means DE || BC (by converse
