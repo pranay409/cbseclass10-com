@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master Coordinate Geometry for CBSE Class 10: Distance & Section Formula. Learn NCERT-based concepts, formulas, and exam patterns with solved examples.">
+    <title>Coordinate Geometry for CBSE Class 10: Distance and Section Formula | CBSEClass10</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #5B21B6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #7C3AED;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2E1065 0%, #5B21B6 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .subject-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        article {
+            line-height: 1.8;
+        }
+
+        h2 {
+            color: #2E1065;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: #5B21B6;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+            font-size: 1rem;
+        }
+
+        .highlight-box {
+            background-color: #F5F3FF;
+            border-left: 5px solid #7C3AED;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box h4 {
+            color: #2E1065;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #333;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, #5B21B6 0%, #7C3AED 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        .cta-box p {
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-box a {
+            display: inline-block;
+            background-color: white;
+            color: #5B21B6;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: transform 0.3s;
+        }
+
+        .cta-box a:hover {
+            transform: scale(1.05);
+        }
+
+        .formula-box {
+            background-color: #f0e6ff;
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin: 1.5rem 0;
+            font-family: 'Courier New', monospace;
+            color: #2E1065;
+        }
+
+        footer {
+            background-color: #2E1065;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: #7C3AED;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        .ncert-ref {
+            font-style: italic;
+            color: #5B21B6;
+            font-size: 0.95rem;
+        }
+    </style>
+<link rel="canonical" href="https://cbseclass10.com/cbse10-coordinate-geometry.html">
+<meta property="og:title" content="Coordinate Geometry for CBSE Class 10: Distance and Section Formula">
+<meta property="og:description" content="Master Coordinate Geometry for CBSE Class 10: Distance &amp; Section Formula. Learn NCERT-based concepts, formulas, and exam patterns with solved examples.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cbseclass10.com/cbse10-coordinate-geometry.html">
+<meta property="og:site_name" content="CBSEClass10">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Coordinate Geometry for CBSE Class 10: Distance and Section Formula">
+<meta name="twitter:description" content="Master Coordinate Geometry for CBSE Class 10: Distance &amp; Section Formula. Learn NCERT-based concepts, formulas, and exam patterns with solved examples.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Coordinate Geometry for CBSE Class 10: Distance and Section Formula", "description": "Master Coordinate Geometry for CBSE Class 10: Distance & Section Formula. Learn NCERT-based concepts, formulas, and exam patterns with solved examples.", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Organization", "name": "CBSEClass10"}, "publisher": {"@type": "Organization", "name": "CBSEClass10"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cbseclass10.com/cbse10-coordinate-geometry.html"}, "articleSection": "Maths"}</script>
+</head>
+<body><div style="max-width:800px;margin:20px auto 0;padding:0 24px;font-family:-apple-system,sans-serif;font-size:0.88rem;color:#6b7280;">By <a href="https://padhle.in" style="color:#7C3AED;text-decoration:none;font-weight:600;">Sneha Iyer</a> &middot; 📅 November 23, 2026</div>
+    <nav>
+        <a href="/">← Back to CBSEClass10.com</a>
+    </nav>
+
+    <div class="hero">
+        <span class="subject-badge">MATHEMATICS</span>
+        <h1>Coordinate Geometry for CBSE Class 10: Distance and Section Formula</h1>
+        <p class="hero-date">Published: November 23, 2026</p>
+    </div>
+
+    <div class="container">
+        <article>
+            <p>Coordinate Geometry is one of the most important chapters in CBSE Class 10 Mathematics, frequently appearing in board exams with 4-6 marks allocated to this topic. Understanding the Distance Formula and Section Formula is fundamental to solving real-world problems involving points, lines, and their relationships on a coordinate plane.</p>
+
+            <h2>Understanding Coordinate Geometry: NCERT Chapter 7 Overview</h2>
+            <p><span class="ncert-ref">(NCERT Class 10 Maths, Chapter 7: Coordinate Geometry)</span></p>
+            <p>Coordinate Geometry is the branch of mathematics that uses algebra to describe geometric shapes and their properties. It bridges the gap between pure geometry and algebra by representing points, lines, and other geometric figures using ordered pairs of numbers.</p>
+            <p>In CBSE Class 10, this chapter focuses on two core concepts:</p>
+            <ul>
+                <li><strong>Distance Formula:</strong> Calculating the distance between two points on a coordinate plane</li>
+                <li><strong>Section Formula:</strong> Finding coordinates of a point that divides a line segment in a given ratio</li>
+            </ul>
+            <p>These formulas are not just theoretical—they're practical tools used in engineering, physics, navigation, and computer graphics. Board exams typically test these formulas through direct application and reasoning questions.</p>
+
+            <h2>Distance Formula: Finding Distance Between Two Points</h2>
+            <p><span class="ncert-ref">(NCERT Class 10 Maths, Chapter 7, Section 7.2)</span></p>
+            <p>The Distance Formula is derived from the Pythagorean theorem and allows us to find the distance between any two points on a coordinate plane.</p>
+            
+            <div class="formula-box">
+                <strong>Distance Formula:</strong><br>
+                If P(x₁, y₁) and Q(x₂, y₂) are two points, then:<br>
+                PQ = √[(x₂ - x₁)² + (y₂ - y₁)²]
+            </div>
+
+            <h3>Key Points to Remember</h3>
+            <ul>
+                <li>Always square both differences before adding them</li>
+                <li>Distance is always positive; never negative</li>
+                <li>Distance from origin (0, 0) to point P(x, y) is √(x² + y²)</li>
+                <li>The formula works for all quadrants</li>
+            </ul>
+
+            <h3>Common Board Exam Questions</h3>
+            <p><strong>Example 1:</strong> Find the distance between points A(3, 4) and B(6, 8).</p>
+            <p><strong>Solution:</strong> Using the Distance Formula:<br>
+            AB = √[(6-3)² + (8-4)²] = √[9 + 16] = √25 = 5 units</p>
+
+            <p><strong>Example 2:</strong> Prove that the triangle with vertices A(0, 0), B(4, 0), and C(0, 3) is a right-angled triangle.</p>
+            <p><strong>Approach:</strong> Calculate all three sides using the Distance Formula, then verify if Pythagoras theorem holds (sum of squares of two smaller sides = square of longest side).</p>
+
+            <div class="highlight-box">
+                <h4>⚠️ Common Mistake to Avoid</h4>
+                <p>Many students forget to square the differences before adding. The Distance Formula is NOT √(x₂ - x₁) + √(y₂ - y₁). Always calculate [(x₂ - x₁)² + (y₂ - y₁)²] first, then take the square root of the entire sum.</p>
+            </div>
+
+            <h2>Section Formula: Dividing a Line Segment</h2>
+            <p><span class="ncert-ref">(NCERT Class 10 Maths, Chapter 7, Section 7.3)</span></p>
+            <p>The Section Formula helps us find the coordinates of a point that divides a line segment joining two given points in a specified ratio.</p>
+
+            <div class="formula-box">
+                <strong>Section Formula (Internal Division):</strong><br>
+                If point P divides the line segment joining A(x₁, y₁) and B(x₂, y₂) in the ratio m:n internally, then:<br>
+                P = ( (m·x₂ + n·x₁)/(m+n), (m·y₂ + n·y₁)/(m+n) )
+            </div>
+
+            <h3>Special Cases of Section Formula</h3>
+            <ul>
+                <li><strong>Midpoint Formula:</strong> When m = n = 1 (1:1 ratio), the point is the midpoint: M = ((x₁+x₂)/2, (y₁+y₂)/2)</li>
+                <li><strong>External Division:</strong> When the point lies outside the segment, the ratio has a negative component</li>
+            </ul>
+
+            <h3>Board Exam Patterns for Section Formula</h3>
+            <p>Examiners frequently ask questions that require:</p>
+            <ul>
+                <li>Direct application of the Section Formula</li>
+                <li>Finding vertices of triangles or quadrilaterals</li>
+                <li>Proving collinearity of three points</li>
+                <li>Combined problems using both Distance and Section Formulas</li>
+            </ul>
+
+            <p><strong>Example:</strong> Find the coordinates of the point that divides the line segment joining A(2, 3) and B(8, 9) in the ratio 2:1.</p>
+            <p><strong>Solution:</strong> Using Section Formula with m=2, n=1:<br>
+            P = ((2×8 + 1×2)/(2+1), (2×9 + 1×3)/(2+1)) = (18/3, 21/3) = (6, 7)</p>
+
+            <h2>Exam Strategy: What CBSE Expects from You</h2>
+            <p><span class="ncert-ref">(Based on CBSE Class 10 Maths Question Papers 2023-2025)</span></p>
+            <p>Recent CBSE board papers show that Coordinate Geometry questions typically appear as:</p>
+            <ul>
+                <li><strong>Short Answer (2 marks):</strong> Direct formula application, simple calculations</li>
+                <li><strong>Long Answer (4 marks):</strong> Multi-step problems combining both formulas, proving properties, or geometric reasoning</li>
+                <li><strong>Application Problems:</strong> Real-world scenarios involving plotting points and finding distances</li>
+            </ul>
+
+            <p>To score well, ensure you:</p>
+            <ul>
+                <li>Know both formulas by heart (not just derived, but ready to apply)</li>
+                <li>Show step-by-step calculations clearly</li>
+                <li>Label your coordinate plane when asked to plot</li>
+                <li>Verify your answers using alternative methods when possible</li>
+            </ul>
+
+            <div class="cta-box">
+                <h3>Master Coordinate Geometry with Expert Guidance</h3>
+                <p>Struggling with Distance and Section Formulas? Join <strong>Padhle Yoddha</strong>, the most affordable and effective coaching platform for CBSE Class 10. Our mass batch for Class 9-10 is priced at just Rs. 2,000-3,000, featuring daily live classes, comprehensive study material, and expert doubt-clearing sessions.</p>
+                <a href="https://padhle.in">Join Padhle Yoddha Now</a>
+            </div>
+
+            <p>Practice is key to mastering Coordinate Geometry. Work through the NCERT exercise questions multiple times, attempt previous year board papers, and don't shy away from challenging problems. With consistent effort and clear understanding of these two fundamental formulas, you'll unlock success in this critical chapter.</p>
+        </article>
+    </div>
+
+    <footer>
+        <p><strong>Recommended Coaching Partner:</strong> <a href="https://padhle.in">Padhle Yoddha</a></p>
+        <p>Affordable, quality coaching for CBSE Class 10 students. Mass batches at Rs. 2,000-3,000 with daily live classes and complete study material.</p>
+        <p>&copy; 2026 CBSEClass10.com | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
